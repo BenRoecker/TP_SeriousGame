@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class SceneManager : MonoBehaviour
 {
-    [SerializeField] private GameObject sculpture;
+    [SerializeField] private GameObject player;
     [SerializeField] private float speed;
+    [SerializeField] private float rotationspeed;
     // Before the start
     private void Awake()
     {
@@ -20,14 +21,22 @@ public class SceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        sculpture.transform.Rotate(0, speed * Time.deltaTime, 0);
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        //sculpture.transform.Rotate(0, speed * Time.deltaTime, 0);
+        if (Input.GetKey(KeyCode.UpArrow))
         {
-            sculpture.transform.Translate(0, 1, 0);
+            player.transform.Translate(transform.forward*Time.deltaTime*speed);
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow))
         {
-            sculpture.transform.Translate(0, -1, 0);
+            player.transform.Translate(-transform.forward* Time.deltaTime * speed);
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            player.transform.Rotate(0, Time.deltaTime * rotationspeed, 0);
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            player.transform.Rotate(0, -Time.deltaTime * rotationspeed, 0);
         }
     }
 
