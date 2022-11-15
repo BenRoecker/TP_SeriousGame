@@ -21,6 +21,14 @@ public class SceneManager : MonoBehaviour
     void Update()
     {
         sculpture.transform.Rotate(0, speed * Time.deltaTime, 0);
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            sculpture.transform.Translate(0, 1, 0);
+        }
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            sculpture.transform.Translate(0, -1, 0);
+        }
     }
 
     // Update is called once per frame after Update
