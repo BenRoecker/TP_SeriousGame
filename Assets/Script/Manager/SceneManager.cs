@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SceneManager : MonoBehaviour
 {
-    public GameObject sculpture;
+    [SerializeField] private GameObject sculpture;
+    [SerializeField] private float speed;
     // Before the start
     private void Awake()
     {
@@ -13,13 +14,13 @@ public class SceneManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sculpture.SetActive(false);
+        //sculpture.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        sculpture.transform.Rotate(0, speed * Time.deltaTime, 0);
     }
 
     // Update is called once per frame after Update
