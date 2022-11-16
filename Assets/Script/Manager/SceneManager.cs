@@ -7,6 +7,7 @@ public class SceneManager : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private float speed;
     [SerializeField] private float rotationspeed;
+    [SerializeField] private Animation animation;
     // Before the start
     private void Awake()
     {
@@ -16,15 +17,18 @@ public class SceneManager : MonoBehaviour
     void Start()
     {
         //sculpture.SetActive(false);
+        animation.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        animation.enabled = false;
         //sculpture.transform.Rotate(0, speed * Time.deltaTime, 0);
         if (Input.GetKey(KeyCode.UpArrow))
         {
             player.transform.Translate(transform.forward*Time.deltaTime*speed);
+            animation.enabled = true;
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
