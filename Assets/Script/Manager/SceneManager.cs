@@ -32,11 +32,11 @@ public class SceneManager : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            player.transform.Rotate(0, Time.deltaTime * rotationspeed, 0);
+            player.transform.Rotate(0, -Time.deltaTime * rotationspeed, 0);
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            player.transform.Rotate(0, -Time.deltaTime * rotationspeed, 0);
+            player.transform.Rotate(0, Time.deltaTime * rotationspeed, 0);
         }
     }
 
