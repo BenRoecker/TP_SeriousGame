@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         seconde = 0;
+        homeButton.onClick.AddListener(() => UpScore());
     }
 
     // Update is called once per frame
@@ -22,7 +23,7 @@ public class UIManager : MonoBehaviour
         timeText.text = seconde.ToString() ;
     }
 
-    public void UpScore()
+    private void UpScore()
     {
         score++;
         scoreText.text = score.ToString();
