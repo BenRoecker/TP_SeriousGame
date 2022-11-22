@@ -8,6 +8,9 @@ public class SceneManager : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float rotationspeed;
     [SerializeField] private Animation animation;
+    [SerializeField] private GameObject cube;
+    [SerializeField] private bool isRotate;
+    public bool IsCubeRotate { get { return isRotate; } set {isRotate = value; } }
     // Before the start
     private void Awake()
     {
@@ -42,6 +45,11 @@ public class SceneManager : MonoBehaviour
         {
             player.transform.Rotate(0, Time.deltaTime * rotationspeed, 0);
         }
+        if (isRotate)
+        {
+            cube.transform.Rotate(0, Time.deltaTime * 60, 0);
+        }
+        
     }
 
     // Update is called once per frame after Update
@@ -72,5 +80,10 @@ public class SceneManager : MonoBehaviour
     private void OnDisable()
     {
 
+    }
+
+    public void RotateCube()
+    {
+        cube.transform.Rotate(0, 60, 0);
     }
 }

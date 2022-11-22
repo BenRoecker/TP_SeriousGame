@@ -9,11 +9,13 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Text timeText;
     [SerializeField] private Text scoreText;
     [SerializeField] private Button homeButton;
+    [SerializeField] private SceneManager sceneManager;
     // Start is called before the first frame update
     void Start()
     {
         seconde = 0;
         homeButton.onClick.AddListener(() => UpScore());
+        homeButton.onClick.AddListener(() => rotateCube());
     }
 
     // Update is called once per frame
@@ -27,5 +29,10 @@ public class UIManager : MonoBehaviour
     {
         score++;
         scoreText.text = score.ToString();
+    }
+
+    private void rotateCube()
+    {
+        sceneManager.RotateCube();
     }
 }
