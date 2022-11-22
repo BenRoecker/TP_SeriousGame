@@ -16,6 +16,7 @@ public class UIManager : MonoBehaviour
         seconde = 0;
         homeButton.onClick.AddListener(() => UpScore());
         homeButton.onClick.AddListener(() => rotateCube());
+        
     }
 
     // Update is called once per frame

@@ -47,7 +47,7 @@ public class SceneManager : MonoBehaviour
         }
         if (isRotate)
         {
-            cube.transform.Rotate(0, Time.deltaTime * 60, 0);
+            cube.transform.Rotate(Time.deltaTime * 60, 0, 0);
         }
         
     }
