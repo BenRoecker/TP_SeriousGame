@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 579eba5bfbf9e8343970108c9be81720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DontDestroy: 0
+  DontDestroy: 1
   player: {fileID: 1631604162}
   speed: 20
   rotationspeed: 100
@@ -245,6 +245,51 @@ Animation:
   m_CorrespondingSourceObject: {fileID: 2223639932434330405, guid: d16d7d1d55a5c2a4ab82b81232ea92bd, type: 3}
   m_PrefabInstance: {fileID: 48091936}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &470107243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 470107244}
+  - component: {fileID: 470107245}
+  m_Layer: 0
+  m_Name: GameManagerSingleton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &470107244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470107243}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 804782918}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &470107245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470107243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b9a8fdddaf1a3344bad519dbbee8594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DontDestroy: 1
 --- !u!1 &487457096
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,6 +735,7 @@ Transform:
   m_Children:
   - {fileID: 1021969430}
   - {fileID: 290535706}
+  - {fileID: 470107244}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1308,7 +1354,6 @@ MonoBehaviour:
   timeText: {fileID: 684017651}
   scoreText: {fileID: 487457098}
   homeButton: {fileID: 824817610}
-  sceneManager: {fileID: 290535707}
 --- !u!1 &1198374912
 GameObject:
   m_ObjectHideFlags: 0

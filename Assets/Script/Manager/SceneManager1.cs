@@ -22,10 +22,7 @@ public class SceneManager1 : Singleton<SceneManager1>
 
     #region private methods
     // Before the start
-    private void Awake()
-    {
-
-    }
+    
     // Start is called before the first frame update
     void Start()
     {

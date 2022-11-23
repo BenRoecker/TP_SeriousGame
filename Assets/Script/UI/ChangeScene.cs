@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class GameManagerSingleton : Singleton<GameManagerSingleton>
+public class ChangeScene : MonoBehaviour
 {
+    public void LoadScene(string SceneName)
+    {
+        GameManagerSingleton.Instance.LoadSceneFromString(SceneName);
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -15,9 +18,5 @@ public class GameManagerSingleton : Singleton<GameManagerSingleton>
     void Update()
     {
         
-    }
-    public void LoadSceneFromString(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
     }
 }

@@ -25,7 +25,7 @@ public class Collisionmanager : MonoBehaviour
         Debug.Log(collision.gameObject.name);
         if(collision.gameObject.tag == "ami")
         {
-            UIManager.Instance.UpdateScore(true);
+            GameManagerSingleton.Instance.LoadSceneFromString("TestScene");
         }
         else if(collision.gameObject.tag == "ennemi")
         {
