@@ -35,11 +35,9 @@ public class Singleton<T> : MonoBehaviour where T : class
         {
             if (_instance != instance)
             {
-
-            }
-            else
-            {
                 Destroy(instance);
+                if (instance.gameObject != null)
+                    Destroy(instance.gameObject);
                 return;
             }
         }
