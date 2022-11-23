@@ -23,6 +23,16 @@ public class Collisionmanager : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log(collision.gameObject.name);
-        uIManager.UpScore();
+        if(collision.gameObject.tag == "ami")
+        {
+            uIManager.UpScore();
+        }
+        else if(collision.gameObject.tag == "ennemi")
+        {
+            uIManager.DownScore();
+        }
+        
     }
+
+    
 }

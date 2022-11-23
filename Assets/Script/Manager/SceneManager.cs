@@ -28,7 +28,7 @@ public class SceneManager : MonoBehaviour
     {
         animation.enabled = false;
         //sculpture.transform.Rotate(0, speed * Time.deltaTime, 0);
-        if (Input.GetKey(KeyCode.UpArrow))
+        /*if (Input.GetKey(KeyCode.UpArrow))
         {
             player.transform.Translate(transform.forward*Time.deltaTime*speed);
             animation.enabled = true;
@@ -48,7 +48,7 @@ public class SceneManager : MonoBehaviour
         if (isRotate)
         {
             cube.transform.Rotate(0, Time.deltaTime * 60, 0);
-        }
+        }*/
         
     }
 

@@ -31,6 +31,12 @@ public class UIManager : MonoBehaviour
         scoreText.text = score.ToString();
     }
 
+    public void DownScore()
+    {
+        score--;
+        scoreText.text = score.ToString();
+    }
+
     private void rotateCube()
     {
         sceneManager.RotateCube();
