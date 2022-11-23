@@ -2,15 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SceneManager : MonoBehaviour
+public class SceneManager : Singleton<SceneManager>
 {
+    #region SerializeField
     [SerializeField] private GameObject player;
     [SerializeField] private float speed;
     [SerializeField] private float rotationspeed;
     [SerializeField] private Animation animation;
     [SerializeField] private GameObject cube;
     [SerializeField] private bool isRotate;
+    #endregion
+
+    #region Public Field
     public bool IsCubeRotate { get { return isRotate; } set {isRotate = value; } }
+    #endregion
+
+    #region private methods
     // Before the start
     private void Awake()
     {
@@ -81,9 +88,12 @@ public class SceneManager : MonoBehaviour
     {
 
     }
+    #endregion
 
+    #region public method
     public void RotateCube()
     {
         cube.transform.Rotate(0, 60, 0);
     }
+    #endregion
 }

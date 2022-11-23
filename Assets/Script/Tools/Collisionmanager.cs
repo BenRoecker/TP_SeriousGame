@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Collisionmanager : MonoBehaviour
 {
-    [SerializeField] private UIManager uIManager;
+    
     [SerializeField] private int CubeForce;
     private Rigidbody rb;
     // Start is called before the first frame update
@@ -25,11 +25,11 @@ public class Collisionmanager : MonoBehaviour
         Debug.Log(collision.gameObject.name);
         if(collision.gameObject.tag == "ami")
         {
-            uIManager.UpdateScore(true);
+            UIManager.Instance.UpdateScore(true);
         }
         else if(collision.gameObject.tag == "ennemi")
         {
-            uIManager.UpdateScore(false);
+            UIManager.Instance.UpdateScore(false);
         }
         
     }
