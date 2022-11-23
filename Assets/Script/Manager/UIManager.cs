@@ -9,7 +9,6 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Text timeText;
     [SerializeField] private Text scoreText;
     [SerializeField] private Button homeButton;
-    [SerializeField] private SceneManager sceneManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +47,6 @@ public class UIManager : Singleton<UIManager>
 
     private void rotateCube()
     {
-        sceneManager.RotateCube();
+        SceneManager1.Instance.RotateCube();
     }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SceneManager : Singleton<SceneManager>
+public class SceneManager1 : Singleton<SceneManager1>
 {
     #region SerializeField
     [SerializeField] private GameObject player;
@@ -11,6 +11,9 @@ public class SceneManager : Singleton<SceneManager>
     [SerializeField] private Animation animation;
     [SerializeField] private GameObject cube;
     [SerializeField] private bool isRotate;
+    #endregion
+
+    #region private field
     #endregion
 
     #region Public Field

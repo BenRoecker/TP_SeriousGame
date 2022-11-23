@@ -13,7 +13,7 @@ public class Singleton<T> : MonoBehaviour where T : class
             return _instance as T;
         }
     }
-    // Start is called before the first frame update
+  
     void Awake()
     {
         CheckInstance(this);

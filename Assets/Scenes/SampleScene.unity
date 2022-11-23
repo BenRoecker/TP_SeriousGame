@@ -228,6 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 579eba5bfbf9e8343970108c9be81720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DontDestroy: 0
   player: {fileID: 1631604162}
   speed: 20
   rotationspeed: 100
@@ -1180,7 +1181,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b774f84cb2d67f4fa8be1be44872387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uIManager: {fileID: 1021969431}
   CubeForce: 10
 --- !u!135 &980211431
 SphereCollider:
@@ -1304,6 +1304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99066e4be6587004392851ac9d2dd88b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DontDestroy: 1
   timeText: {fileID: 684017651}
   scoreText: {fileID: 487457098}
   homeButton: {fileID: 824817610}
