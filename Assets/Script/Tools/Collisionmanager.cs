@@ -25,11 +25,11 @@ public class Collisionmanager : MonoBehaviour
         Debug.Log(collision.gameObject.name);
         if(collision.gameObject.tag == "ami")
         {
-            uIManager.UpScore();
+            uIManager.UpdateScore(true);
         }
         else if(collision.gameObject.tag == "ennemi")
         {
-            uIManager.DownScore();
+            uIManager.UpdateScore(false);
         }
         
     }
