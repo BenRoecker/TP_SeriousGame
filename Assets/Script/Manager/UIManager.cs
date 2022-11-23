@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
         timeText.text = seconde.ToString() ;
     }
 
-    private void UpScore()
+    public void UpScore()
     {
         score++;
         scoreText.text = score.ToString();
