@@ -17,13 +17,23 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetButtonDown("Vertical"))
         {
-            _playerAnimator.SetBool("IsWalking", false);
+            _playerAnimator.SetBool("IsWalking", true);
         }
         if(Input.GetButtonUp("Vertical"))
         {
+            _playerAnimator.SetBool("IsWalking", false);
+        }
+        transform.Translate(Vector3.forward * (Input.GetAxis("Vertical") * _characterSpeed) * Time.deltaTime);
+
+        if (Input.GetButtonDown("Horizontal"))
+        {
             _playerAnimator.SetBool("IsWalking", true);
         }
-        transform.Translate(Vector3.forward * (Input.GetAxis("Vertical") * _characterSpeed)*Time.deltaTime);
+        if (Input.GetButtonUp("Horizontal"))
+        {
+            _playerAnimator.SetBool("IsWalking", false);
+        }
+        transform.Translate(Vector3.right * (Input.GetAxis("Horizontal") * _characterSpeed)*Time.deltaTime);
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -34,7 +44,7 @@ public class PlayerController : MonoBehaviour
             _playerAnimator.SetBool("IsJump", false);
         }
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Attack"))
         {
             _playerAnimator.SetBool("IsAttacking", true);
         }
