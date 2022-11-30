@@ -8,7 +8,6 @@ public class SceneManager1 : Singleton<SceneManager1>
     [SerializeField] private GameObject player;
     [SerializeField] private float speed;
     [SerializeField] private float rotationspeed;
-    [SerializeField] private Animation animation;
     [SerializeField] private GameObject cube;
     [SerializeField] private bool isRotate;
     #endregion
@@ -27,13 +26,11 @@ public class SceneManager1 : Singleton<SceneManager1>
     void Start()
     {
         //sculpture.SetActive(false);
-        animation.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        animation.enabled = false;
         //sculpture.transform.Rotate(0, speed * Time.deltaTime, 0);
         /*if (Input.GetKey(KeyCode.UpArrow))
         {
