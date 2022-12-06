@@ -187,7 +187,7 @@ MonoBehaviour:
   _carteLegendaireImage: {fileID: 21300000, guid: 8f3338e2294706849a83104c533684a5, type: 3}
   _carteRareImage: {fileID: 21300000, guid: 81be430bc6f17964e9e2ab711e7e1986, type: 3}
   _carteCommunImage: {fileID: 21300000, guid: ab1b6cdc5848b3245a233f21a523f7d3, type: 3}
-  carteSO: {fileID: 0}
+  carteSO: {fileID: 11400000, guid: 6af98a767fa653749891ecc3e13b6892, type: 2}
 --- !u!1 &550435311
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,7 +291,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 86, y: -190.9}
+  m_AnchoredPosition: {x: 134, y: -190.9}
   m_SizeDelta: {x: 70, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &610488086
@@ -394,7 +394,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 81be430bc6f17964e9e2ab711e7e1986, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8f3338e2294706849a83104c533684a5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -603,7 +603,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.1, y: -190.9}
+  m_AnchoredPosition: {x: 71, y: -190.9}
   m_SizeDelta: {x: 70, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1372550330

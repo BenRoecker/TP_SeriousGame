@@ -21,12 +21,37 @@ public class CarteModel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        InitializeCard();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void InitializeCard()
+    {
+        _carteName.text = carteSO.carteName;
+        _carteAttack.text = carteSO.Attack.ToString();
+        _carteDefense.text = carteSO.Defense.ToString();
+        _carteDescription.text = carteSO.Description;
+        cartePhoto.sprite = carteSO.carteImage;
+
+        switch (carteSO.carteType)
+        {
+            case CarteType.Commun:
+                carteBackground.sprite = _carteCommunImage;
+                break;
+            case CarteType.Rare:
+                carteBackground.sprite = _carteRareImage;
+                break;
+            case CarteType.Legendaire:
+                carteBackground.sprite = _carteLegendaireImage;
+                break;
+            default:
+                carteBackground.sprite = _carteCommunImage;
+                break;
+        }
     }
 }

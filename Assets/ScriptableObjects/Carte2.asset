@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ac2a307068f9d1429ff672d527419d6, type: 3}
   m_Name: Carte2
   m_EditorClassIdentifier: 
+  carteName: Chevalier (Benji)
   Attack: 9000
   Defense: 9000
   carteType: 2
