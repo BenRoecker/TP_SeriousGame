@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Carte", menuName ="EFREI/ScriptableObjects/Cartes")]
 public class CarteSO : ScriptableObject
 {
+    public string carteName;
     public int Attack;
     public int Defense;
     public CarteType carteType;

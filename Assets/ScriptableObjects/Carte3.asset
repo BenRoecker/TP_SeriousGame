@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ac2a307068f9d1429ff672d527419d6, type: 3}
   m_Name: Carte3
   m_EditorClassIdentifier: 
-  Attack: 0
-  Defense: 0
-  carteType: 2
-  Description: 
-  carteImage: {fileID: 0}
+  Attack: 5000
+  Defense: 2000
+  carteType: 1
+  Description: "Amateur de l'op\xE9ra Rock. Avec son caf\xE9, il vit l'assasymphonie."
+  carteImage: {fileID: 21300000, guid: f6e8c0ebd1996484abff70af7ee60cf1, type: 3}

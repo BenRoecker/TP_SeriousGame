@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ac2a307068f9d1429ff672d527419d6, type: 3}
   m_Name: Carte1
   m_EditorClassIdentifier: 
-  Attack: 0
-  Defense: 0
-  carteType: 2
-  Description: 
-  carteImage: {fileID: 0}
+  carteName: "Caf\xE9 (Benji)"
+  Attack: 1000
+  Defense: 1500
+  carteType: 0
+  Description: "Ce Benjamin est fort en caf\xE9ine."
+  carteImage: {fileID: 21300000, guid: 150200e8497f6094eb2e615a50dc0fb1, type: 3}

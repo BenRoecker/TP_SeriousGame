@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ac2a307068f9d1429ff672d527419d6, type: 3}
   m_Name: Carte2
   m_EditorClassIdentifier: 
-  Attack: 0
-  Defense: 0
+  Attack: 9000
+  Defense: 9000
   carteType: 2
-  Description: 
-  carteImage: {fileID: 0}
+  Description: "Ce Benjamin vous d\xE9fendra apr\xE8s son caf\xE9 du matin."
+  carteImage: {fileID: 21300000, guid: 11fb7fff6ea31f4408c55b42cd5eccb2, type: 3}
